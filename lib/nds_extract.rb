@@ -30,7 +30,7 @@ def directors_totals(nds)
   while start < nds.length do
       total = 0
       movie_count = 0
-      while movies < nds[start][:movies].length
+      while movie_count < nds[start][:movies].length
         total += nds[start][:movies][movie_count][:worldwide_gross]
         movie_count += 1
       end
@@ -48,4 +48,5 @@ def directors_totals(nds)
       # start = start + 1
   end
   result
+
 end
