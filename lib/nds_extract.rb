@@ -18,5 +18,15 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  row_index = 0
+  d_totals = 0
+  while row_index < nds.count
+    #pp nds
+    puts nds[row_index][:worldwide_gross]
+    binding.pry
+
+     
+  row_index += 1
+  end
+  #return d_totals
 end
