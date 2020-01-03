@@ -18,5 +18,21 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  row_index = 0
+  d_totals = {}
+  while row_index < nds.count
+    d_key = nds[row_index][:name]
+    d_totals[d_key] = 0 
+    movie_index = 0
+    while movie_index < nds[row_index][:movies].length do
+      movie = nds[row_index][:movies][movie_index]
+      d_totals[d_key] += movie[:worldwide_gross]
+      
+    movie_index += 1  
+    end
+
+     
+  row_index += 1
+  end
+  return d_totals
 end
